@@ -16,7 +16,7 @@ from qgis.PyQt.QtGui import QFont, QIcon
 from .crs_options import CRS_OPTIONS
 from .converter import shp_to_txt, txt_to_shp
 
-PLUGIN_VERSION = "1.0.1"
+PLUGIN_VERSION = "1.0.2"
 
 
 class ConvertWorker(QThread):
@@ -71,7 +71,7 @@ class ShpTxtConverterDialog(QDialog):
         self.setWindowTitle("SHP TXT Coordinate Converter")
         self.setMinimumSize(760, 520)
         self.resize(820, 600)
-        self.setWindowFlags(self.windowFlags() | Qt.WindowMaximizeButtonHint)
+        self.setWindowFlags(self.windowFlags() | Qt.WindowType.WindowMaximizeButtonHint)
 
         self.plugin_dir = os.path.dirname(__file__)
         self.icon_path = os.path.join(self.plugin_dir, "icons", "icon_v103.png")
@@ -115,7 +115,7 @@ class ShpTxtConverterDialog(QDialog):
             "Convert coordinates between Shapefile and TXT with geometry restoration and optional CRS transformation."
         )
         desc.setWordWrap(True)
-        desc.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
+        desc.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
         layout.addWidget(desc)
 
         mode_group = QGroupBox("Conversion")
