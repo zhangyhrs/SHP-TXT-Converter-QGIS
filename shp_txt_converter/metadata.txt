@@ -3,7 +3,7 @@ name=SHP TXT Converter
 qgisMinimumVersion=3.22
 qgisMaximumVersion=3.99
 description=Convert coordinates between Shapefile and TXT with geometry restoration and CRS transformation.
-version=1.0.0
+version=1.0.1
 author=Zhang Y.H.
 email=zhangyhcumt@163.com
 about=A lightweight QGIS vector utility for bidirectional conversion between ESRI Shapefile geometries and structured TXT coordinates. Supports Point, LineString and Polygon geometries, polygon outer/inner rings, multipart features, common CGCS2000 CRS presets, custom EPSG codes and optional reprojection. Uses QGIS bundled GDAL/OGR and requires no additional Python packages.
@@ -16,4 +16,5 @@ homepage=https://github.com/zhangyhrs/SHP-TXT-Converter-QGIS
 repository=https://github.com/zhangyhrs/SHP-TXT-Converter-QGIS
 tracker=https://github.com/zhangyhrs/SHP-TXT-Converter-QGIS/issues
 license=GPL-2.0-or-later
-changelog=1.0.0 - Initial public release.
+changelog=1.0.1 - Fixed QGIS security validation findings (Bandit B110) by replacing silent exception handling.
+    1.0.0 - Initial public release candidate.
