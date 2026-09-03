@@ -21,6 +21,12 @@ A lightweight QGIS plugin for **bidirectional conversion between ESRI Shapefile 
 - Background conversion thread to keep the QGIS interface responsive.
 - No external Python package dependencies.
 
+## Interface
+
+<p align="center">
+  <img src="docs/plugin-interface.png" alt="SHP TXT Coordinate Converter interface" width="900">
+</p>
+
 ## TXT format
 
 ```text
@@ -68,6 +74,12 @@ Email: `zhangyhcumt@163.com`
 - 针对 GDAL 3+/PROJ 统一采用传统 GIS X/Y 轴顺序。
 - 后台线程转换，避免长任务阻塞 QGIS 主界面。
 - 不依赖额外第三方 Python 包。
+
+### 软件界面
+
+<p align="center">
+  <img src="docs/plugin-interface.png" alt="SHP TXT Coordinate Converter 软件界面" width="900">
+</p>
 
 ### 注意事项
 
