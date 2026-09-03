@@ -18,8 +18,9 @@ def force_traditional_gis_order(srs):
         return None
     try:
         srs.SetAxisMappingStrategy(osr.OAMS_TRADITIONAL_GIS_ORDER)
-    except Exception:
-        pass
+    except (AttributeError, TypeError):
+        # Older GDAL/OGR builds may not expose axis mapping strategy.
+        return srs
     return srs
 
 
@@ -55,18 +56,20 @@ class SafeCoordinateTransformer:
     def transform_xy(self, x, y):
         x = float(x)
         y = float(y)
+        first_error = None
         try:
             pt = self.ct.TransformPoint(x, y, 0.0)
             return float(pt[0]), float(pt[1])
-        except Exception:
-            pass
+        except (RuntimeError, TypeError, ValueError) as exc:
+            first_error = exc
         try:
             pt_geom = ogr.Geometry(ogr.wkbPoint)
             pt_geom.AddPoint(x, y, 0.0)
             pt_geom.Transform(self.ct)
             return float(pt_geom.GetX()), float(pt_geom.GetY())
-        except Exception as e:
-            raise RuntimeError(f"坐标转换失败: ({x}, {y}) -> {e}")
+        except (RuntimeError, TypeError, ValueError) as exc:
+            detail = f"; TransformPoint error: {first_error}" if first_error else ""
+            raise RuntimeError(f"坐标转换失败: ({x}, {y}) -> {exc}{detail}") from exc
 
 
 def build_transform(src_srs, dst_srs):
@@ -75,10 +78,11 @@ def build_transform(src_srs, dst_srs):
     src_srs = clone_srs_with_gis_order(src_srs)
     dst_srs = clone_srs_with_gis_order(dst_srs)
     try:
-        if src_srs.IsSame(dst_srs):
-            return None
-    except Exception:
-        pass
+        same_crs = bool(src_srs.IsSame(dst_srs))
+    except (AttributeError, TypeError, RuntimeError):
+        same_crs = False
+    if same_crs:
+        return None
     return SafeCoordinateTransformer(src_srs, dst_srs)
 
 
@@ -103,8 +107,8 @@ def safe_remove_shp(shp_path):
         if os.path.exists(p):
             try:
                 os.remove(p)
-            except Exception:
-                pass
+            except OSError as exc:
+                raise OSError(f"无法删除已有 Shapefile 组件: {p}: {exc}") from exc
 
 
 # =========================================================
