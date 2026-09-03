@@ -24,7 +24,7 @@ A lightweight QGIS plugin for **bidirectional conversion between ESRI Shapefile 
 ## Interface
 
 <p align="center">
-  <img src="docs/plugin-interface.png" alt="SHP TXT Coordinate Converter interface" width="900">
+  <img src="https://raw.githubusercontent.com/zhangyhrs/SHP-TXT-Converter-QGIS/main/docs/plugin-interface.png" alt="SHP TXT Coordinate Converter interface" width="900">
 </p>
 
 ## TXT format
@@ -78,7 +78,7 @@ Email: `zhangyhcumt@163.com`
 ### 软件界面
 
 <p align="center">
-  <img src="docs/plugin-interface.png" alt="SHP TXT Coordinate Converter 软件界面" width="900">
+  <img src="https://raw.githubusercontent.com/zhangyhrs/SHP-TXT-Converter-QGIS/main/docs/plugin-interface.png" alt="SHP TXT Coordinate Converter 软件界面" width="900">
 </p>
 
 ### 注意事项
