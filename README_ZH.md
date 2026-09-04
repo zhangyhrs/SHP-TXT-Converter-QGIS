@@ -82,7 +82,7 @@ TXT 文件本身不保存 CRS 信息。如果需要将 TXT 坐标转换到另一
 
 ## 作者
 
-**Zhang Y.H.** · GitHub [@zhangyhrs](https://github.com/zhangyhrs) · Email: `zhangyhcumt@163.com`
+**Zhang Y.H.** · GitHub [@zhangyhrs](https://github.com/zhangyhrs)
 
 相关工具：[GeoStar Selector for QGIS](https://github.com/zhangyhrs/GeoStar-Selector-QGIS) · [SHP2KMZ Tool](https://github.com/zhangyhrs/SHP2KMZ_Tool) · [Map Tile Downloader](https://github.com/zhangyhrs/map_tile_downloader)
 
