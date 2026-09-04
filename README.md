@@ -77,7 +77,7 @@ Follow the **测绘地信** WeChat Official Account for surveying, remote sensin
 
 ## Author
 
-**Zhang Y.H.** · GitHub [@zhangyhrs](https://github.com/zhangyhrs) · Email: `zhangyhcumt@163.com`
+**Zhang Y.H.** · GitHub [@zhangyhrs](https://github.com/zhangyhrs)
 
 Related: [GeoStar Selector for QGIS](https://github.com/zhangyhrs/GeoStar-Selector-QGIS) · [SHP2KMZ Tool](https://github.com/zhangyhrs/SHP2KMZ_Tool) · [Map Tile Downloader](https://github.com/zhangyhrs/map_tile_downloader)
 
