@@ -349,6 +349,7 @@ class ShpTxtConverterDialog(QDialog):
         self._log(f"Source CRS: EPSG:{src_epsg}" if src_epsg else "Source CRS: from input / undefined")
         self._log(f"Target CRS: EPSG:{dst_epsg}" if dst_epsg else "Target CRS: same as source")
         self._log(f"Precision: {precision}" if mode == "shp2txt" else f"Geometry: {geom_type}")
+        self.tabs.setCurrentWidget(self.log_tab)
 
         self.progress_bar.setRange(0, 100)
         self.progress_bar.setValue(0)
@@ -371,6 +372,7 @@ class ShpTxtConverterDialog(QDialog):
     def _on_finished(self, success, msg):
         self.btn_run.setEnabled(True)
         self.btn_run.setText("Convert")
+        self.tabs.setCurrentWidget(self.log_tab)
         if success:
             self._log(msg)
             self.progress_bar.setValue(self.progress_bar.maximum())
