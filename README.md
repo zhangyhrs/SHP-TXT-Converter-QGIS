@@ -62,16 +62,18 @@ Download the QGIS installation ZIP, then open **Plugins → Manage and Install P
 
 ## Follow & Connect
 
-Follow the **测绘地信** WeChat Official Account for surveying, remote sensing, natural-resources and GIS content. You can also join the **测绘地理信息共享中心** Knowledge Planet community for tools, resources and technical discussions.
+Follow the **测绘地信** WeChat Official Account and Mini Program for surveying, remote sensing, natural-resources and GIS content. You can also join the **测绘地理信息共享中心** Knowledge Planet community for tools, resources and technical discussions.
 
 <table>
   <tr>
-    <td align="center" width="50%"><strong>WeChat Official Account: 测绘地信</strong></td>
-    <td align="center" width="50%"><strong>Knowledge Planet: 测绘地理信息共享中心</strong></td>
+    <td align="center" width="33%"><strong>WeChat Official Account<br>测绘地信</strong></td>
+    <td align="center" width="33%"><strong>WeChat Mini Program<br>测绘地信</strong></td>
+    <td align="center" width="33%"><strong>Knowledge Planet<br>测绘地理信息共享中心</strong></td>
   </tr>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/zhangyhrs/GeoStar-Selector-QGIS/main/assets/wechat-official-account.png" alt="WeChat Official Account: 测绘地信" width="100%"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/zhangyhrs/GeoStar-Selector-QGIS/main/assets/knowledge-planet.jpg" alt="Knowledge Planet: 测绘地理信息共享中心" width="64%"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/zhangyhrs/GeoStar-Selector-QGIS/main/assets/wechat-official-account.png" alt="WeChat Official Account: 测绘地信" height="150"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/zhangyhrs/GeoStar-Selector-QGIS/main/assets/wechat-mini-program.jpg" alt="WeChat Mini Program: 测绘地信" height="150"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/zhangyhrs/GeoStar-Selector-QGIS/main/assets/knowledge-planet.jpg" alt="Knowledge Planet: 测绘地理信息共享中心" height="150"></td>
   </tr>
 </table>
 
