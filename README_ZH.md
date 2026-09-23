@@ -67,16 +67,18 @@ TXT 文件本身不保存 CRS 信息。如果需要将 TXT 坐标转换到另一
 
 ## 关注与交流
 
-欢迎关注微信公众号 **测绘地信**，获取测绘、遥感、自然资源与 GIS 技术内容；也可加入知识星球 **测绘地理信息共享中心**，交流软件工具、专业资料和行业技术。
+欢迎关注微信公众号 **测绘地信**、微信小程序 **测绘地信**，获取测绘、遥感、自然资源与 GIS 技术内容；也可加入知识星球 **测绘地理信息共享中心**，交流软件工具、专业资料和行业技术。
 
 <table>
   <tr>
-    <td align="center" width="50%"><strong>微信公众号：测绘地信</strong></td>
-    <td align="center" width="50%"><strong>知识星球：测绘地理信息共享中心</strong></td>
+    <th width="33%">WeChat Official Account<br>微信公众号：测绘地信</th>
+    <th width="33%">WeChat Mini Program<br>微信小程序：测绘地信</th>
+    <th width="33%">Knowledge Planet<br>知识星球：测绘地理信息共享中心</th>
   </tr>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/zhangyhrs/GeoStar-Selector-QGIS/main/assets/wechat-official-account.png" alt="微信公众号：测绘地信" width="100%"></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/zhangyhrs/GeoStar-Selector-QGIS/main/assets/knowledge-planet.jpg" alt="知识星球：测绘地理信息共享中心" width="64%"></td>
+    <td align="center" valign="middle"><img src="https://raw.githubusercontent.com/zhangyhrs/GeoStar-Selector-QGIS/main/assets/wechat-official-account.png" alt="微信公众号：测绘地信" height="150"></td>
+    <td align="center" valign="middle"><img src="https://raw.githubusercontent.com/zhangyhrs/GeoStar-Selector-QGIS/main/assets/wechat-mini-program.jpg" alt="微信小程序：测绘地信" height="150"></td>
+    <td align="center" valign="middle"><img src="https://raw.githubusercontent.com/zhangyhrs/GeoStar-Selector-QGIS/main/assets/knowledge-planet.jpg" alt="知识星球：测绘地理信息共享中心" height="150"></td>
   </tr>
 </table>
 
